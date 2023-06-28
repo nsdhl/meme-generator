@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import TextField from "@mui/material/TextField";
 
-function App() {
+
+const App = () => {
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="navbar">
+        
+        <span className="text"> Meme-Generator</span>
+      </div>
+
+      <br />
+      <div className="meme-form">
+        <TextField id="outlined-basic" label="Outlined" variant="outlined" />{" "}
+        <TextField id="outlined-basic" label="Outlined" variant="outlined" />
+      </div>
+
+      <div className="meme-button" >
+      Get a random meme now.
+      </div>
     </div>
   );
-}
+};
 
 export default App;
